@@ -1,0 +1,338 @@
+@import url("reset.css");
+@import url("grid.css");
+@import url("layout.css");
+@import url("navbar.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+body{background-color: #000;}
+
+html{
+	font-family: 'Oswald', sans-serif;
+}
+
+/*COLORS*/
+
+/*
+	Dark #000
+	Gray #262626
+	Aqua #008FDE
+	White #F2F0F3
+	Blue #151025
+	004D78
+*/
+
+a i{
+	color: #008FDE;
+	font-size: 32px;
+}
+
+.bg_azul{
+	background-color: #008FDE;
+}
+
+.bg_gray{
+	background-color: #262626;
+}
+
+.bg_blue{
+	background-color:#002539;
+}
+
+.c_azul{
+	color: #008FDE;
+}
+
+/*.container-fluid{
+	background-color:  #000;
+}*/
+
+
+.item {
+	height: auto;
+	/*padding: 1rem;*/
+	/*font-size: 2rem;*/
+	/*border: thin solid #FF5700;*/
+}
+
+
+#inicio{
+	background-image:  url("../img/gym10.jpg");
+	background-size: auto 100vh;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/*background-color: black;*/
+	height: calc(100vh - 20px);
+	color:  #F2F0F3;
+	position: relative;
+}
+
+
+#main_screen{
+	padding: 48px 32px;
+	color: #F2F0F3;
+	height: 90vh;
+	margin-top: 68px;
+}
+
+#msg1{
+	font-size:28px ;
+	font-weight: bold;
+	padding:10px;
+	border: solid 4px  #F2F0F3;
+	margin-top: 48px;
+}
+
+#msg2{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 32px 0;
+	z-index: 1;
+	/*color:  #F2F0F3;*/
+}
+
+#triangle{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 70px solid transparent;
+	bottom: 4rem;
+	left: calc(50vw - 50px);
+	position: absolute;
+	cursor: pointer;
+}
+
+#arrow{
+	margin-top: 30px;
+	margin-left: -10px;
+	position :relative;
+	animation: bounce 2s infinite;
+	z-index: -1;
+}
+
+
+/* Standard syntax */
+@keyframes bounce {
+    0%,50%,100% {transform:translateY(0);}
+    40% {transform:translateY(-10px);} /* ignored */
+    60% {transform:translateY(-7px);}
+}
+
+.btn_aqua ,.btn_aqua_border {
+	color:#F2F0F3;
+	border:0;
+	background-color: #00A0F8;
+}
+
+.btn_aqua_border{
+	border:solid 3px #F2F0F3;
+	background:    linear-gradient(
+	  rgba(0, 160, 248, 0.3),
+	  rgba(0, 160, 248, 0.3)
+	)
+}
+
+.square-act{
+	height: 450px;
+	color:#F2F0F3;
+	padding: 16px;
+	text-align: center;
+}
+
+#responsive{
+	background:    linear-gradient(
+	  rgba(0, 0, 0, 0.7),
+	  rgba(0, 0, 0, 0.7)
+	), url("../img/gym01.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 600px;
+	background-position:top center;
+}
+
+#included{
+	background:    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+  ), url("../img/gym03.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 600px;
+	background-position:top center;
+}
+
+#unlimited{
+  background:    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+   ), url("../img/gym07.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 600px;
+	background-position:top center;
+}
+
+.icon-act{
+	width: 140px;
+	height: 110px;
+	margin-top: 120px;
+	padding:16px;
+	color: #262626;
+	background-color:#F2F0F3;
+	border:solid 4px #F2F0F3;
+	vertical-align: middle;
+}
+
+#training{
+	height: 450px;
+	background:    linear-gradient(
+    	rgba(0, 160, 248, 0.7),
+	    rgba(0, 160, 248, 0.7)
+    ), url("../img/gym09.jpg");
+	background-size: auto 100vh;
+	background-position:top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color:#F2F0F3;
+	text-align: center;
+	padding: 48px;
+
+}
+
+#msg_trining{
+	font-size: 80px;
+	font-size: 5rem;
+}
+
+#services{
+	/*height: 450px;*/
+	background:    linear-gradient(
+    	rgba(0, 0, 0, 0.5),
+	    rgba(0, 0, 0, 0.5)
+    ), url("../img/gym08.jpg");
+	background-size: auto 700px;
+	background-position:top center;
+	background-repeat: repeat;
+	color:#F2F0F3;
+	text-align: center;
+	padding: 48px;
+
+}
+
+.servicio{
+	background:    linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	);
+	padding: 32px;
+	border:solid 5px  linear-gradient(
+	  rgba(255, 255, 255, 0.8),
+	  rgba(255, 255, 255, 0.8)
+	);
+}
+
+.icon-ser{
+	width: 140px;
+	height: 110px;
+	padding:16px;
+	margin:16px;
+	color: #F2F0F3;
+	vertical-align: middle;
+}
+
+#events{
+	background-color: #262626;
+}
+
+.event{
+	border-bottom: thin solid #F2F0F3;
+}
+
+.event_date{
+	background-color: #008FDE;
+}
+
+#img_bio{
+		height: 400px;
+		background-image: url("../img/gym04.jpg");
+		background-size: auto ;
+		background-position:center center;
+		background-repeat: repeat;
+		/*padding: auto;*/
+}
+
+@media screen and (min-width: 30em){
+	body{
+		/* background-color: magenta; */
+	}
+	#msg_trining{
+		/* font-size: 80px; */
+		font-size: 4.5rem;
+	}
+}
+
+@media screen and (min-width: 48em){
+	body{
+		/* background-color: blue; */
+	}
+}
+
+@media screen and (min-width: 64em){
+	body{
+		/* background-color: cyan; */
+	}
+}
+
+/*@media screen and (max-height: 22.5em){
+	#inicio{
+		height: 600px;
+	}
+
+	#main_screen{
+		padding: 0px 32px;
+	}
+
+	body{
+		background-color: green;
+	}
+}*/
+
+@media screen and (max-height: 42em){
+	#inicio{
+		height: 600px;
+	}
+
+	#main_screen{
+		padding: 0px 32px;
+	}
+
+	body{
+		/* background-color: red; */
+	}
+}
+
+
+/*MOBILE FIRST*/
+@media screen and (max-width: 30em){
+	#training{
+		padding: 48px 16px;
+	}
+
+	#msg1{
+		font-size:16px ;
+		font-weight: bold;
+		padding:10px;
+		border: solid 4px  #F2F0F3;
+		margin-top: 16px;
+	}
+
+	#msg2{
+		font-size: 2.5rem;
+		font-weight: bold;
+		margin: 16px 0;
+	}
+
+	#msg_trining{
+		font-size: 48px;
+		font-size: 3rem;
+	}
+}
+
